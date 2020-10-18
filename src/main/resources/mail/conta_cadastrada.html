@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nosso Banco Digital - Conta Criada</title>
+</head>
+<body>
+	<section>
+		<p>Olá, <span th:text="${nome}"></span></p>
+		<p>Estamos aqui para informar que sua conta já foi criada.</p>
+		<p>Abaixo estão os dados da sua conta:</p>
+		
+		<table>
+			<tbody>
+				<tr>
+					<td>Banco</td>
+					<td><span th:text="${banco}"></span></td>
+				</tr>
+				
+				<tr>
+					<td>Agência</td>
+					<td><span th:text="${agencia}"></span></td>
+				</tr>
+				
+				<tr>
+					<td>Conta</td>
+					<td><span th:text="${conta}"></span></td>
+				</tr>
+			</tbody>
+		</table>		
+		
+		<p>Atenciosamente,<p>
+		<p>Equipe do Nosso Banco Digital</p>
+	</section>
+</body>
+</html>
